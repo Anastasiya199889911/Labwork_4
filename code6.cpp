@@ -1,4 +1,5 @@
-{
+foreach (DirectoryInfo dir in dirs.GetDirectories()) 
+{ 
 //create folder{16} 
 stream.Write(new byte[] { (byte) NetworkMessage.MakeDir }, 0, 1); 
 stream.Read(new byte[1],0, 1); 
